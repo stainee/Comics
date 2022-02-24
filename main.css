@@ -1,0 +1,67 @@
+body{
+    padding-left : 180px;
+    padding-top: 20px;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.menu{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.category{
+    margin: 0px;
+    padding: 0px;
+}
+
+.category li{
+    margin-right: 100px;
+    padding: 0px;
+    display: inline-block; /*반응형 웹 때문에라도 inline block 선호. float - left 하면 다른 CSS 요소들이 반응하지 않는다)*/
+    /* inline-block 하지 않았다. 웹페이지상 월-일 웹툰은 모두 표시되어야 하기때문이다. */
+
+}
+
+
+.col {
+    width : 100px;
+    margin: 0px;
+    padding: 0px;
+    padding-right:20px;
+    display: inline-block;
+}
+
+.col ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.col li{
+    margin-bottom : 10px;
+}
+
+.subcategory{ 
+    margin: 0px;
+    padding: 0px;
+    padding-top : 20px; /*위에있는게 우선 적용*/
+}
+
+.subcategory ul{
+    padding: 0px;
+    margin: 0px;
+}
+.subcategory li{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.banner{ 
+    margin-left : 40px; /* 마진과 패딩의 차이. 패딩은 남겨진 공간이다 */
+    width:700px;
+    height: 100px;
+    background-color: aquamarine;
+}
