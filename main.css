@@ -1,37 +1,49 @@
 body{
-    padding-left : 180px;
-    padding-top: 20px;
+    /* margin:0px; */
+    /* padding-left : 120px; */
+    padding-left : 10%;
+    padding-top: 2%;
 }
 
 ul, li{
     list-style: none;
 }
 
-.menu{ 
-    margin-top: 20px;
-    margin-bottom: 20px;
+a{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow:ellipsis;
 }
 
-.category{
-    margin: 0px;
-    padding: 0px;
+#menu{
+    /* width:700px; */
+    width: 84%;
+    height: 120px; 
+}
+
+.banner{ /* 차후 윗 메뉴와,,,,*/
+    /* 마진과 패딩의 차이. 패딩은 남겨진 공간이다 */
+    background-color: aquamarine;
 }
 
 .category li{
-    margin-right: 100px;
+    margin-right: 12%;
     padding: 0px;
     display: inline-block; /*반응형 웹 때문에라도 inline block 선호. float - left 하면 다른 CSS 요소들이 반응하지 않는다)*/
-    /* inline-block 하지 않았다. 웹페이지상 월-일 웹툰은 모두 표시되어야 하기때문이다. */
 
 }
-
 
 .col {
     width : 100px;
     margin: 0px;
     padding: 0px;
     padding-right:20px;
+    /* float :left; */
     display: inline-block;
+    /* float는 다른요소에 대해 왼쪽부터. 독립적으로 이루어진다.div tag가 block 설정이였으나 이를 무시한다는 것이다.
+    inline-block은 부모 종속적 tag다, 따라서 내 코드에서 아래 option 부분과 함께 움직일수 있는 부분이 되는 이유는 이때문이다.
+     */
 }
 
 .col ul{
@@ -41,12 +53,19 @@ ul, li{
 
 .col li{
     margin-bottom : 10px;
+    text-align: center;
 }
 
+#option{
+    display: block;
+}
+
+/* 아래 옵션들 */
 .subcategory{ 
     margin: 0px;
     padding: 0px;
     padding-top : 20px; /*위에있는게 우선 적용*/
+    display: block;
 }
 
 .subcategory ul{
@@ -59,9 +78,3 @@ ul, li{
     display: inline-block;
 }
 
-.banner{ 
-    margin-left : 40px; /* 마진과 패딩의 차이. 패딩은 남겨진 공간이다 */
-    width:700px;
-    height: 100px;
-    background-color: aquamarine;
-}
