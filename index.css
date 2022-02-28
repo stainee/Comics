@@ -1,0 +1,113 @@
+body{
+    padding-left : 10%;
+    padding-top: 2%;
+    margin:0;
+}
+
+ul, li{
+    list-style: none;
+    padding:0;
+}
+
+.title{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow:ellipsis;
+}
+
+#menu{
+    width: 840px;
+    
+}
+
+.banner{ /* 차후 윗 메뉴와,,,,*/
+    /* 마진과 패딩의 차이. 패딩은 남겨진 공간이다 */
+    background-color: pink;
+    height:200px;
+    overflow: hidden;
+
+    
+}
+.banner > ul {
+    margin : 0 ;
+    display: flex;
+    /* flex ㅠㅠ */
+}
+
+.pre_btn{
+    position: absolute;
+}
+
+.next_btn{
+    position: absolute;
+    left : 840px;
+} /* position  및 button 변경할것 */ 
+
+.bitem{
+    width: 840px;
+    height:200px;
+    overflow: hidden;
+}
+
+.category li{
+    font-size: 16px;
+    padding-right:48px;
+    padding-left:48px;
+    display: inline-block; /*반응형 웹 때문에라도 inline block 선호. float - left 하면 다른 CSS 요소들이 반응하지 않는다)*/
+
+}
+
+#content{ 
+    overflow: hidden;
+}
+.col {
+    width : 100px;
+    margin: 0px;
+    padding-right:20px;
+    float : left;
+    /* display: inline-block; */
+    /*참조한 글 : https://m.blog.naver.com/thdbsgh3443/221229545494*/
+    /* float는 다른요소에 대해 왼쪽부터. 독립적으로 이루어진다.div tag가 block 설정이였으나 이를 무시한다는 것이다.
+    inline-block은 부모 종속적 tag다, 따라서 내 코드에서 아래 option 부분과 함께 움직일수 있는 부분이 되는 이유는 이때문이다.
+     */
+}
+
+.col ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.col li{
+    margin-bottom : 10px;
+    text-align: center;
+}
+
+/* 아래 옵션들 */
+
+#option{
+    width: 840px;
+    margin: 0px;
+    display: block;
+}
+
+.subcategory{
+    
+    padding: 0px;
+    padding-top : 20px; /*위에있는게 우선 적용*/
+    display: block;
+}
+
+.subcategory ul{
+    padding: 0px;
+    margin: 0px;
+}
+.subcategory li{
+    font-size: 16px;
+    padding-right:72px;
+    padding-left:72px;
+    margin: 0px;
+    display: inline-block;
+}
+
+
