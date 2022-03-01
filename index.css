@@ -22,7 +22,7 @@ ul, li{
 }
 
 .banner{ /* 차후 윗 메뉴와,,,,*/
-    /* 마진과 패딩의 차이. 패딩은 남겨진 공간이다 */
+    /* 마진과 패딩의 차이. 마진은 밖, 패딩은 안 공간이다 */
     background-color: pink;
     width: 840px;
     height:200px;
@@ -30,11 +30,14 @@ ul, li{
 
     
 }
-.banner > ul {
-    margin : 0 ;
-    display: flex;
-    /* flex ㅠㅠ */
+
+.banner ul{
+    margin :0;
+    width: 2520px;
+    height: 200px;
+    display: flex; /* 알아보기*/
 }
+
 
 .pre_btn{
     display: block;
