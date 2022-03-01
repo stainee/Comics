@@ -24,6 +24,7 @@ ul, li{
 .banner{ /* 차후 윗 메뉴와,,,,*/
     /* 마진과 패딩의 차이. 패딩은 남겨진 공간이다 */
     background-color: pink;
+    width: 840px;
     height:200px;
     overflow: hidden;
 
@@ -36,13 +37,13 @@ ul, li{
 }
 
 .pre_btn{
-    position: absolute;
+    display: block;
 }
 
 .next_btn{
-    position: absolute;
-    left : 840px;
+    display: inline-block;
 } /* position  및 button 변경할것 */ 
+
 
 .bitem{
     width: 840px;
