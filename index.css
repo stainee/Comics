@@ -1,6 +1,6 @@
 body{
-    padding-left : 10%;
-    padding-top: 2%;
+    padding-left : 200px;
+    padding-top: 20px;
     margin:0;
 }
 
@@ -38,21 +38,45 @@ ul, li{
     display: flex; /* 알아보기*/
 }
 
-
-.pre_btn{
-    display: block;
-}
-
-.next_btn{
-    display: inline-block;
-} /* position  및 button 변경할것 */ 
-
-
 .bitem{
     width: 840px;
     height:200px;
     overflow: hidden;
 }
+
+ /* Banner button  */ 
+.pre_btn{
+    background-color: gray;
+    position: absolute;
+    top : 0px;
+    margin-top: 20px;
+    width: 40px;
+    height: 200px;
+    opacity: 20%;
+}
+
+.pre_btn:hover{
+    opacity: 40%;
+}
+
+.next_btn{
+    background-color: gray;
+    position: absolute;
+    top : 0px;
+    left : 840px;
+    margin-top: 20px;
+    margin-left:160px;
+    width: 40px;
+    height: 200px;
+    opacity: 20%;
+}
+
+.next_btn:hover{
+    opacity: 40%;
+}
+
+
+/* category */
 
 .category li{
     font-size: 16px;
