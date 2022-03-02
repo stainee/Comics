@@ -1,5 +1,5 @@
 body{
-    padding-left : 200px;
+    padding-left : 100px;
     padding-top: 20px;
     margin:0;
 }
@@ -18,11 +18,11 @@ ul, li{
 
 #menu{
     width: 840px;
+    display: inline-block;
     
 }
 
-.banner{ /* 차후 윗 메뉴와,,,,*/
-    /* 마진과 패딩의 차이. 마진은 밖, 패딩은 안 공간이다 */
+.banner{ 
     background-color: pink;
     width: 840px;
     height:200px;
@@ -35,7 +35,7 @@ ul, li{
     margin :0;
     width: 2520px;
     height: 200px;
-    display: flex; /* 알아보기*/
+    display: flex; 
 }
 
 .bitem{
@@ -65,7 +65,7 @@ ul, li{
     top : 0px;
     left : 840px;
     margin-top: 20px;
-    margin-left:160px;
+    margin-left:60px;
     width: 40px;
     height: 200px;
     opacity: 20%;
@@ -75,6 +75,18 @@ ul, li{
     opacity: 40%;
 }
 
+.banner_index{
+    position: relative;
+    top : -40px;
+    height : 40px;
+    text-align: center;
+}
+.index_1{
+    background-color: blue;
+    width : 40px;
+    height : 40px;
+    border-radius: 70%;
+}
 
 /* category */
 
@@ -82,11 +94,12 @@ ul, li{
     font-size: 16px;
     padding-right:48px;
     padding-left:48px;
-    display: inline-block; /*반응형 웹 때문에라도 inline block 선호. float - left 하면 다른 CSS 요소들이 반응하지 않는다)*/
+    display: inline-block;
 
 }
 
-#content{ 
+.content{ 
+    display: inline-block;
     overflow: hidden;
 }
 .col {
@@ -94,11 +107,6 @@ ul, li{
     margin: 0px;
     padding-right:20px;
     float : left;
-    /* display: inline-block; */
-    /*참조한 글 : https://m.blog.naver.com/thdbsgh3443/221229545494*/
-    /* float는 다른요소에 대해 왼쪽부터. 독립적으로 이루어진다.div tag가 block 설정이였으나 이를 무시한다는 것이다.
-    inline-block은 부모 종속적 tag다, 따라서 내 코드에서 아래 option 부분과 함께 움직일수 있는 부분이 되는 이유는 이때문이다.
-     */
 }
 
 .col ul{
@@ -111,16 +119,15 @@ ul, li{
     text-align: center;
 }
 
-/* 아래 옵션들 */
+/* options */
 
 #option{
     width: 840px;
-    margin: 0px;
-    display: block;
+    margin: 0;
+    display: inline-block;
 }
 
 .subcategory{
-    
     padding: 0px;
     padding-top : 20px; /*위에있는게 우선 적용*/
     display: block;
@@ -129,13 +136,40 @@ ul, li{
 .subcategory ul{
     padding: 0px;
     margin: 0px;
+    text-align: center;
 }
 .subcategory li{
     font-size: 16px;
-    padding-right:72px;
-    padding-left:72px;
+    width : 210px;
     margin: 0px;
+    float: left;
+    vertical-align: middle;
+}
+
+.tab{
+    background-color: blanchedalmond;
+    text-decoration: none;
+    width:210px;
+    height: 36px;
+    padding-top:10px;
     display: inline-block;
 }
 
+.tab:hover{
+    background-color: rgb(71, 69, 69);
+}
 
+
+/* tab */
+
+.tab.on{
+    background-color: aquamarine;
+}
+
+.tabview{
+    display:none;
+}
+
+.tabview:nth-child(2){
+    display:block;
+}

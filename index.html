@@ -17,11 +17,10 @@
                 <li> <div class = "bitem" > <img src="img/banner2.PNG"></div> </li>
                 <li> <div class = "bitem" > <img src="img/banner3.PNG"></div> </li>
             </ul>
+            <span class = pre_btn></span>
+            <span class = next_btn></span>
+
         </div>
-        <!-- <button class="pre_btn"> 이전 </button> -->
-        <span class = pre_btn></span>
-        <span class = next_btn></span> 
-        <!-- <button class="next_btn"> 다음 </button> -->
 
         <div class="category">
             <ul>
@@ -37,99 +36,114 @@
     </div>
 
     <!-- 요일별 카테고리 내용 -->
-    <div id = "content">
-        <div class="col"> <!--각 요일별 컨텐츠를 열로 정렬-->
-            <ul>
-                <li> 
-                    <div class="items">
-                        <!-- alt : 지정한 경로에 이미지가 없다면-->
-                        <a href="https://comic.naver.com/webtoon/list?titleId=183559&weekday=mon"><img src="img/TOG.PNG", width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=183559&weekday=mon" style="font-size:14px;"> 신의탑</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="items"> 
-                        <a href="https://comic.naver.com/webtoon/list?titleId=748105&weekday=thu"> <img src="img/diary.PNG", width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=748105&weekday=thu" style="font-size:14px;"> 독립일기</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <ul>
-                <li>
-                    <div class="items">
-                        <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/jojo.PNG",  width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px;"> 조조코믹스</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- 일단 예시-->
-        <div class="col">
-            <ul>
-                <li>
-                    <div class="items">
-                        <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/lisa.PNG",  width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px;">  여주실격</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <ul>
-                <li>
-                    <div class="items">
-                        <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/kubera.PNG",  width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px;">  쿠베라</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    
+    <div id ="tab1" class="tabview">
+        <div class = "content">
+            <div class="col"> <!--각 요일별 컨텐츠를 열로 정렬-->
+                <ul>
+                    <li> 
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=183559&weekday=mon"><img src="img/TOG.PNG", width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=183559&weekday=mon" style="font-size:14px;"> 신의탑</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="items"> 
+                            <a href="https://comic.naver.com/webtoon/list?titleId=748105&weekday=thu"> <img src="img/diary.PNG", width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=748105&weekday=thu" style="font-size:14px;"> 독립일기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/jojo.PNG",  width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px;"> 조조코믹스</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/lisa.PNG",  width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px;">  여주실격</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/kubera.PNG",  width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px;">  쿠베라</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="col">
-            <ul>
-                <li>
-                    <div class="items">
-                        <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/apple.PNG",  width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px; ">  세기말 풋사과 보습학원</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <ul>
-                <li>
-                    <div class="items">
-                        <a href="https://comic.naver.com/webtoon/list?titleId=724815&weekday=sat"><img src="img/nine.PNG",  width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=724815&weekday=sat" style="font-size:14px;">  아홉수우리들</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <ul>
-                <li>
-                    <div class="items">
-                        <a href="https://comic.naver.com/webtoon/list?titleId=746858&weekday=sun"><img src="img/ehea.PNG",  width=100%, height=100%></a>
-                        <a class="title" href="https://comic.naver.com/webtoon/list?titleId=746858&weekday=sun" style="font-size:14px;">  이번 생도 잘 부탁해</a>
-                    </div>
-                </li>
-            </ul>
+            <div class="col">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed"><img src="img/apple.PNG",  width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=774862&weekday=wed" style="font-size:14px; ">  세기말 풋사과 보습학원</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=724815&weekday=sat"><img src="img/nine.PNG",  width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=724815&weekday=sat" style="font-size:14px;">  아홉수우리들</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="https://comic.naver.com/webtoon/list?titleId=746858&weekday=sun"><img src="img/ehea.PNG",  width=100%, height=100%></a>
+                            <a class="title" href="https://comic.naver.com/webtoon/list?titleId=746858&weekday=sun" style="font-size:14px;">  이번 생도 잘 부탁해</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <div id="tab2" class="tabview">
+        <div class = "content"> 스크랩 </div>
+    </div>
+
+    <div id="tab3" class="tabview">
+        <div class = "content"> 검색 </div>
+    </div>
+
+    <div id="tab4" class="tabview">
+        <div class = "content"> 설정 </div>
+    </div>
+
 
     <div id = "option">
         <div class="subcategory">
             <ul>
-                <li>만화</li>
-                <li>스크랩</li>
-                <li>검색</li>
-                <li>설정</li>
+                <li> <div class="tab on" data-target="#tab1"> 만화 </a> </li>
+                <li> <div class="tab" data-target="#tab2">스크랩 </a></li>
+                <li> <div class="tab" data-target="#tab3"> 검색 </a></li>
+                <li> <div class="tab" data-target="#tab4"> 설정 </a></li>
             </ul>
         </div>
     </div>
     <script src="slide.js"></script>
+    <script src="tabview.js"></script>
 
 </body>
 

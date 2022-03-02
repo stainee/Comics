@@ -1,5 +1,4 @@
 const banner = document.querySelector('.banner ul');
-const slides = document.querySelectorAll('.banner li');
 
 const prev = document.querySelector('.pre_btn');
 const next = document.querySelector('.next_btn');
